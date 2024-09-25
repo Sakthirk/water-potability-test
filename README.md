@@ -31,32 +31,12 @@ development -> Stage -> main
 ### Prerequisites
 
 - Python 3.10
-- Docker
 
-### Steps
-
-```shell
-sh serve_local/serve_inference_app.sh
-```
-
-# Local Testing
-
-```shell
-pip3 install -r requirements.txt
-python tests/test_model.py
-```
-
-# Local Training
-
-```shell
-pip3 install -r requirements.txt
-python src/train.py
-```
 
 # M4 Deployed endpoint
 
 ```
-curl --location 'http://ec2-3-236-192-59.compute-1.amazonaws.com:8080/predict' \
+curl --location 'http://ec2-54-158-125-197.compute-1.amazonaws.com:8080/predict' \
 --header 'Content-Type: application/json' \
 --data '{
     "ph": 7.0,
